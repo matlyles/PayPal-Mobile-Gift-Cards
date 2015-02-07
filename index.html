@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    
+    <link rel="apple-touch-startup-image" href="img/splash-screen.png" media="screen and (max-device-width: 320px)" />
+    <link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+    <link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+
+    <title>PayPal Exploration</title>
+
+    <!-- Stylesheets -->
+    <link href="styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+   <!--  <link href="styles/sliders.css" rel="stylesheet" type="text/css"> -->
+    <link href="styles/giftcards.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+    /* ===============================================================
+Basic Swiper Styles 
+================================================================*/
+.swiper-container, .swiper-container-2 {
+  margin:0 auto;
+  position:relative;
+  overflow:hidden;
+  -webkit-backface-visibility:hidden;
+  -moz-backface-visibility:hidden;
+  -ms-backface-visibility:hidden;
+  -o-backface-visibility:hidden;
+  backface-visibility:hidden;
+  /* Fix of Webkit flickering */
+  z-index:1;
+}
+.swiper-wrapper {
+  position:relative;
+  width:100%;
+  -webkit-transition-property:-webkit-transform, left, top;
+  -webkit-transition-duration:0s;
+  -webkit-transform:translate3d(0px,0,0);
+  -webkit-transition-timing-function:ease;
+  
+  -moz-transition-property:-moz-transform, left, top;
+  -moz-transition-duration:0s;
+  -moz-transform:translate3d(0px,0,0);
+  -moz-transition-timing-function:ease;
+  
+  -o-transition-property:-o-transform, left, top;
+  -o-transition-duration:0s;
+  -o-transform:translate3d(0px,0,0);
+  -o-transition-timing-function:ease;
+  -o-transform:translate(0px,0px);
+  
+  -ms-transition-property:-ms-transform, left, top;
+  -ms-transition-duration:0s;
+  -ms-transform:translate3d(0px,0,0);
+  -ms-transition-timing-function:ease;
+  
+  transition-property:transform, left, top;
+  transition-duration:0s;
+  transform:translate3d(0px,0,0);
+  transition-timing-function:ease;
+}
+.swiper-free-mode > .swiper-wrapper {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+.swiper-slide {
+  float: left;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+}
+
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+.swiper-container {
+  /* Specify Swiper's Size: */
+
+  /*width:200px;
+  height: 100px;*/
+}
+.swiper-slide {
+  /* Specify Slides's Size: */
+  
+  /*width: 100%;
+  height: 100%;*/
+}
+.swiper-slide-active {
+  /* Specific active slide styling: */
+  
+}
+.swiper-slide-visible {
+  /* Specific visible slide styling: */ 
+
+}
+/* ===============================================================
+Pagination Styles
+================================================================*/
+.swiper-pagination-switch {
+  /* Stylize pagination button: */  
+
+}
+.swiper-active-switch {
+  /* Specific active button style: */ 
+  
+}
+.swiper-visible-switch {
+  /* Specific visible button style: */  
+  
+}
+.swiper-container {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+/* border-left: solid 1px #999; */
+  border-right: solid 1px #999;
+}
+
+.swiper-slide {
+  background:#fff;
+  width:56px;
+}
+.swiper-visible-switch {
+  background: #aaa;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+    </style>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src='http://code.jquery.com/jquery-latest.min.js'></script>  
+    <script src="scripts/sliders.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div class="overlay">
+   <!-- barcode -->
+          <div class="code-container">
+               <div class="barcode">
+                 <img src="img/bc.svg">
+                 <h6>Gift card number</h6>
+                 <div class="h1">159767456</div>
+               </div>
+               <!-- pin -->
+               <div class="pin">
+               <span class="label">PIN</span>
+                 <h2>3756</h2>
+               </div>
+              </div>
+              <div class="unlock">
+                <a class="showpin" href="#">Unlock</a>
+              </div>
+
+                 <!-- enter pin -->
+          <div class="pin-container">
+              <h4>Enter account pin</h4>
+               <div class="pin-box">
+                   <input class="pin" type="tel" maxlength="4"></input> 
+               </div> 
+          </div>
+
+          </div>
+
+<div class="wrapper">
+          
+              <!-- <h2 class="wallet-section-title">Wallgreens gift card</h2> -->
+              <div class="gg-numbers">
+              <a href="#" class="color closed"></a>
+              <a href="#" class="expand"></a>
+                <img src="img/walgreens.svg" class="merchant-logo">
+
+              <!-- barcode -->
+               <div class="barcode">
+                 <img src="img/bc.svg">
+                 <h6>Gift card number</h6>
+                 <div class="h1">159767456</div>
+               </div>
+               <!-- pin -->
+               <div class="pin">
+               <span class="label">PIN</span>
+                 <h2>3756</h2>
+               </div>
+              </div>
+
+              <!-- colors -->
+             <div class="colors-container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div id="custom" class="swiper-slide">
+            
+                     <a class="swatch custom selected" href="#"></a>
+                  </div>
+                  <div id="blue" class="swiper-slide">
+                     
+                     <a class="swatch" href="#"></a>
+                  </div>
+                   <div id="lt-blue" class="swiper-slide">
+                     
+                     <a class="swatch" href="#"></a>
+                  </div>
+                  <div id="green" class="swiper-slide">
+                  
+                     <a class="swatch" href="#"></a>
+                  </div>
+
+                   <div id="orange" class="swiper-slide">
+                   
+                     <a class="swatch" href="#"></a>
+                  </div>
+                   <div id="yellow" class="swiper-slide">
+              
+                     <a class="swatch" href="#"></a>
+                  </div>
+                  <div id="purple" class="swiper-slide">
+                    
+                     <a class="swatch" href="#"></a>
+                  </div>
+                  <div id="lt-grey" class="swiper-slide">
+                     <a class="swatch" href="#"></a>
+                  </div>
+                  <div id="grey" class="swiper-slide">
+                  
+                     <a class="swatch" href="#"></a>
+                  </div>
+                   <div id="black" class="swiper-slide">
+                     <a class="swatch" href="#"></a>
+                  </div>
+                 
+                 </div> 
+                </div>
+              </div>
+
+            
+              <!-- end colors container -->
+
+              <!-- balance info  -->
+              <ul class="balance-info">
+                <li><span class="label">Balance</span>$35.47 USD</li>
+                <li class="updated"><span class="label">Last updated Jun 23, 2014</span> <a href="#">Refresh</a></li>
+              </ul>
+              <!-- actions -->
+              <ul class="actions">
+                <li><a href="#">Use in-stores</a></li>
+                <li><a href="#">Use online</a></li>
+              </ul>
+              <!-- footer -->
+              <div class="footer-links">
+                <a class="terms" href="#">Terms and conditions</a>
+                <a class="delete" href="#">Delete</a>
+              </div>
+ 
+</div>
+ <script>
+
+ $(document).ready(function(){
+
+ //localStorage.setItem('color', '')
+ //localStorage.setItem('islocked', 0);
+
+ if(localStorage.getItem('islocked') == 1) {
+    lockScreen();
+    
+ }
+ 
+ if(!localStorage.getItem('color') == '') {
+    $('.gg-numbers').addClass(localStorage.getItem('color'));
+ }
+
+ //alert(localStorage.getItem('islocked'));
+
+ window.scrollTo(0, 1);
+  var triggerEvent= "click"; // touchend for mobile device, click for normal web browser
+
+
+  var mySwiper = new Swiper('.swiper-container',{
+    
+    slidesPerView: 'auto'
+  });
+
+  $('.expand').on(triggerEvent,function(e){ 
+      lockScreen();
+      return false;
+  });
+
+  $('.color').on(triggerEvent,function(e){
+      
+       if($(this).hasClass('open')) {
+        $('.colors-container').css({'height' : '0px'});
+        $(this).removeClass('open').addClass('closed');
+
+       } else {
+        $('.colors-container').css({'height' : '50px'});
+          $(this).removeClass('closed').addClass('open');
+       }
+      return false;
+  });
+
+   $('.unlock a').on(triggerEvent,function(e){
+    if($(this).hasClass('showpin')) {
+
+      hidePin($(this));
+
+    } else if($(this).hasClass('hidepin')) {
+
+      inputPin($(this));
+
+    }
+    return false;
+  });
+
+
+   $(".pin").keyup(function () {
+    if (this.value.length == this.maxLength) {
+      //$(this).next('.pin').focus();
+      resetLockScreen();
+    }
+  });
+
+   $('.overlay .pin-container .pin').focusout(function(){  
+      window.scrollTo(0, 0);
+   });
+
+
+   // color picker 
+   $('.swiper-slide').click(function() {
+       var newSwatch = $(this).attr('id');
+       var newCardColor = 'c-'+newSwatch;
+       $('.swiper-slide').removeClass('selected');
+       $(this).addClass('selected');
+       localStorage.setItem('color', newCardColor);
+       
+
+        $('.gg-numbers').removeClass(function (index, classNames) {
+            var current_classes = classNames.split(" "),classes_to_remove = [];
+
+        $.each(current_classes, function (index, class_name) {
+          if (/c-.*/.test(class_name)) {
+          classes_to_remove.push(class_name);
+          }
+        }); // end each
+    return classes_to_remove.join(" ");
+    });
+    $('.gg-numbers').addClass(newCardColor);
+    $('.pin .label').addClass(newCardColor);
+
+  }); // end click 
+
+   function resetLockScreen() {
+     localStorage.setItem('islocked', 0);
+   
+      $('.pin').blur();
+      $('.unlock a').text('Unlock');
+      $('.unlock a').removeClass('hidepin').addClass('showpin');
+      $('.pin-container, .code-container').hide();
+      $('.pin').val('');
+
+      setTimeout(function(){
+        $('.pin-container').removeAttr('style');
+        $('.code-container').removeAttr('style');
+        $('.overlay').css({'z-index' : '0','opacity' : '0'});
+      document.ontouchmove = function(e){ return true; }
+    }, 140);
+   }
+
+   function hidePin(n) {
+    $('.pin-container').show();
+      $(n).text('Cancel');
+      $(n).removeClass('showpin').addClass('hidepin');
+      $('.overlay .code-container').css({'margin-top' : '-80%', 'opacity' : '0.4'});
+
+      setTimeout(function(){
+        $('.overlay .pin-container').css({'opacity' : '1'});
+          setTimeout(function(){
+            $('.overlay .pin-container .pin:first-child').focus();
+          }, 400);
+      }, 400);
+   }
+
+   function inputPin(n) {
+      
+      $('.pin').val('');
+      $(n).text('Unlock');
+      $(n).removeClass('hidepin').addClass('showpin');
+
+
+      $('.pin-container').removeAttr('style');
+      setTimeout(function(){
+        $('.code-container').removeAttr('style');
+      }, 100);
+    
+    }
+
+    function lockScreen() {
+       localStorage.setItem('islocked', 1);
+  
+      $('.overlay').css({'z-index' : '2','opacity' : '1'});
+      //document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+      document.ontouchmove = function(e){ e.preventDefault(); }
+    }
+    
+
+//end doc type
+  });
+
+
+  </script>
+
+</body>
+</html>
